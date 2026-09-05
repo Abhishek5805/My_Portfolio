@@ -15,60 +15,60 @@ export default function LaunchPoint() {
     {
       icon: "fas fa-envelope",
       label: "Email",
-      href: "mailto:gouravsapaliga125@gmail.com",
+      href: "mailto:abhishekshinde5805@gmail.com",
     },
     {
       icon: "fab fa-linkedin",
       label: "LinkedIn",
-      href: "https://linkedin.com/in/gourav-sapaliga-658032262",
+      href: "https://www.linkedin.com/in/abhishek-shinde-91a853273/",
     },
     {
       icon: "fab fa-github",
       label: "GitHub",
-      href: "https://github.com/shadowofdominance",
+      href: "https://github.com/Abhishek5805",
     },
     {
       icon: "fas fa-download",
       label: "Resume",
-      href: "/docs/GouravJrGameDev.pdf",
+      href: "https://drive.google.com/file/d/1u9UMaWrPkYViQiqmamTzCilW3McHTGO7/view?usp=drivesdk",
     },
   ];
 
   const initialLatestUpdates = [
     {
       id: 1,
-      type: "Unity Play",
-      title: "Just deployed my first game on Unity play!",
-      thumb: "/images/unitylogo.png",
-      href: "https://play.unity.com/en/games/c0d7356e-3b5b-4032-97c1-559ad334db5a/chaos-drop",
+      type: "Project",
+      title: "Developed AI Gym Coach using Python and AI",
+      thumb: "/images/GYM.png",
+      href: "https://github.com/Abhishek5805/AI-GYM-Coach"
     },
     {
       id: 2,
-      type: "github",
-      title: "Created an Index for my Unity Prototypes",
-      thumb: "/images/githublogo.png",
-      href: "https://github.com/shadowofdominance/Unity_Learning_Prototypes.git",
+    type: "Project",
+    title: "Built SnapClass AI Attendance System",
+    thumb: "https://sc-landing-page-lime.vercel.app/static/img/demo/snap-landing.png",
+    href: "https://github.com/Abhishek5805/snapclass-Attendance-System-Using-AI"
     },
     {
       id: 3,
-      type: "github",
-      title: "Learning the new Input System Package in Unity",
+      type: "Project",
+      title: "Built Wanderlust - Airbnb Inspired Travel Listing Web Application",
       thumb: "/images/githublogo.png",
-      href: "https://github.com/shadowofdominance/Input_System_Learning.git",
+      href: "https://github.com/Abhishek5805/wanderlust-project"
     },
     {
       id: 4,
       type: "github",
       title: "My First Project during College!",
       thumb: "/images/githublogo.png",
-      href: "https://github.com/shadowofdominance/Swift_Edit_final.git",
+      href: "https://github.com/Abhishek5805/Online-Book-Recommendation-Project-",
     },
     {
       id: 5,
-      type: "github",
-      title: "Learning about character controllers and player movement in Unity",
-      thumb: "/images/githublogo.png",
-      href: "https://github.com/shadowofdominance/Character_Controller_Learning.git",
+      type: "Certificate",
+      title: "Completed DSA Course by Apna College",
+      thumb: "/images/DAA.png",
+      href: "https://www.linkedin.com/posts/abhishek-shinde-91a853273_im-happy-to-share-that-ive-obtained-a-new-activity-7421913390627016704-M0P-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAELd_mYBarckwToBqK_9b4OtgdqnwTqXHVU"
     },
   ];
 
@@ -81,7 +81,7 @@ export default function LaunchPoint() {
         id: item.id ?? Date.now(),
         type: item.type ?? "misc",
         title: item.title ?? "Untitled",
-        thumb: item.thumb ?? "/images/Webp/profilepic.webp",
+        thumb: item.thumb ?? "/public/images/Webp/main.webp",
         href: item.href ?? "#",
       };
 
@@ -219,8 +219,8 @@ export default function LaunchPoint() {
           {/* Left column: profile/details (left-aligned) */}
           <div className="flex-1 text-left md:pl-6 lg:pl-10">
             <img
-              src="/images/Webp/profilepic.webp"
-              alt="Portrait of Gourav Sapaliga"
+              src="/images/Webp/main.webp"
+              alt="Portrait of Abhishek Shinde"
               className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-ring shadow-lg"
               loading="lazy"
             />
@@ -231,8 +231,8 @@ export default function LaunchPoint() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              <span className="block text-foreground">GOURAV</span>
-              <span className="block text-primary">SAPALIGA</span>
+              <span className="block text-foreground">ABHISHEK</span>
+              <span className="block text-primary">SHINDE</span>
             </motion.h1>
 
             <div className="mt-6 pt-4 border-t border-muted-foreground/20">

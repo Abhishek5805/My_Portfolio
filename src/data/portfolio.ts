@@ -27,85 +27,64 @@ export interface Achievement {
 
 export const projects: Project[] = [
   {
-    id: "chaos-drop",
-    title: "Chaos Drop",
-    description:
-      "Catch the good objects. Avoid the bad ones. Don’t lose all your lives. Simple controls. Fast reflexes. Pure focus. How long can you survive?",
-    image:
-      "https://github.com/shadowofdominance/PortfolioImages/blob/master/ChaosDrop.png?raw=true",
-    technologies: ["Unity", "C#", "2D Physics"],
-    codeUrl: "https://github.com/shadowofdominance/Chaos_Drop.git",
-    playUrl:
-      "https://play.unity.com/en/games/c0d7356e-3b5b-4032-97c1-559ad334db5a/chaos-drop",
-    category: ["Games", "C#"],
+    id: "snapclass-attendance-system",
+  title: "SnapClass - AI Attendance System",
+  description:
+    "An AI-powered attendance management system that uses facial recognition to automatically mark student attendance. Features include secure authentication, real-time attendance tracking, attendance reports, and an intuitive dashboard for students and administrators.",
+  image:
+    "https://sc-landing-page-lime.vercel.app/static/img/demo/snap-landing.png",
+  technologies: [
+    "Python",
+    "Face Recognition",
+    "OpenCV",
+    "Streamlit",
+    "Supabase",
+    "AI"
+  ],
+  codeUrl:
+    "https://github.com/Abhishek5805/snapclass-Attendance-System-Using-AI",
+  playUrl:
+    "https://snapclass-attendance-system-using-ai.streamlit.app/",
+  category: ["AI", "Web App"]
   },
   {
-    id: "Unity test game",
-    title: "Isometric Tactics Prototype – Grid, Pathfinding & AI",
+    id: "AI Gym Coach  ",
+    title: "AI Gym Coach – Real-Time Workout Assistant ",
     description:
-      "A Unity-built prototype featuring grid-based movement, custom editor tools for obstacle placement, BFS pathfinding, and responsive enemy AI. Developed from scratch to simulate turn-based tactical gameplay.",
+      "Developed an AI-powered fitness assistant that analyzes exercise posture in real time using MediaPipe Pose Estimation and OpenCV, providing accurate repetition counting and form correction.",
     image:
-      "https://github.com/shadowofdominance/PortfolioImages/blob/master/isometric.png?raw=true",
-    technologies: ["C#", "Unity3D"],
-    codeUrl: "https://github.com/shadowofdominance/UnityTestGame.git",
-    category: ["Prototypes", "Tools", "C#"],
+      "images/image.png",
+    technologies: [
+  "Python",
+  "Streamlit",
+  "MediaPipe",
+  "OpenCV",
+  "Groq AI",
+  "SQLite"
+],
+    codeUrl: "https://github.com/Abhishek5805/AI_GYM",
+    category: ["AI/ML", "Streamlit", "MediaPipe"],
   },
   {
-    id: "Gittool-qt",
-    title: "Git tool(qt)",
-    description:
-      "A lightweight Git management tool designed to simplify version control workflows through an intuitive interface. It provides quick insights into repository status, commit history, and project structure without relying on the command line.",
-    image:
-      "https://github.com/shadowofdominance/PortfolioImages/blob/master/gittool.png?raw=true",
-    technologies: ["C++", "QT", "QT Widgets"],
-    codeUrl: "https://github.com/shadowofdominance/Swift_Edit_final.git",
-    category: ["Tools", "C++"],
+    id: "wanderlust",
+  title: "Wanderlust – Full Stack Travel Booking Platform",
+  description:
+  "Developed a full-stack travel and accommodation platform inspired by Airbnb, enabling users to create, manage, and explore property listings. Implemented secure authentication, image uploads with Cloudinary, reviews and ratings, and MongoDB-powered data management to deliver a scalable and user-friendly travel experience.",
+  image:
+  "images/wan.png",
+  technologies: [
+"Node.js",
+"Express.js",
+"MongoDB",
+"JavaScript",
+"Cloudinary",
+"Bootstrap"
+],
+codeUrl:
+"https://github.com/Abhishek5805/Wanderlust",
+category: ["Full Stack", "MERN", "Web Development"]
   },
-  {
-    id: "unity-gameplay-prototypes",
-    title: "Unity Gameplay Systems – Prototype Collection",
-    description:
-      "A structured collection of gameplay-focused Unity prototypes demonstrating core systems including player mechanics, object spawning, endless runner gameplay, animation & SFX integration, wave and powerup mechanics, and full UI implementation",
-    image: "/images/unitylogo.png",
-    technologies: ["Unity", "C#", "Game Development", "UI Systems"],
-    codeUrl:
-      "https://github.com/shadowofdominance/Unity_Learning_Prototypes.git",
-    category: ["Collections", "Prototypes", "C#"],
-  },
-  {
-    id: "swift-edit",
-    title: "SwiftEdit",
-    description:
-      "SwiftEdit is a lightning-fast, no-frills text editor built for desktop warriors who crave speed and simplicity.",
-    image:
-      "https://github.com/shadowofdominance/PortfolioImages/blob/master/Swiftedit.png?raw=true",
-    technologies: [".NET", "C#", "WinForms"],
-    codeUrl: "https://github.com/shadowofdominance/Swift_Edit_final.git",
-    category: ["Tools", "C#"],
-  },
-  {
-    id: "Project-Maze",
-    title: "Project Maze V1",
-    description:
-      "A 2D top-down maze system built in Unity featuring procedural generation and dynamic path creation. The project focuses on clean architecture, implementing all four OOP pillars while enabling interactive player-driven navigation.",
-    image:
-      "https://github.com/shadowofdominance/PortfolioImages/blob/master/projectmaze2.png?raw=true",
-    technologies: ["Unity", "C#"],
-    codeUrl: "https://github.com/shadowofdominance/Swift_Edit_final.git",
-    category: ["Tools", "Prototypes", "C#"],
-  },
-  {
-    id: "OOPs-Demo",
-    title: "OOPs Demonstration Project",
-    description:
-      "A demonstration project showcasing the principles of Object-Oriented Programming in C#.",
-    image:
-      "https://github.com/shadowofdominance/PortfolioImages/blob/master/oopsdemo22.png?raw=true",
-    technologies: [".NET", "C#", "WinForms"],
-    codeUrl:
-      "https://github.com/shadowofdominance/Jr_Programmer_Last_Project.git",
-    category: ["Prototypes", "C#"],
-  },
+  
 ];
 
 export const events: Event[] = [
@@ -118,24 +97,7 @@ export const events: Event[] = [
     image: "/images/evogen2.jpg",
     stats: ["100+ Participants", "2 Judges", "90% Satisfaction"],
   },
-  {
-    id: "game-dev-championship",
-    title: "Communities Leadership",
-    role: "Admin & Meetup Organizer",
-    description:
-      "Drive synergy across 4 active communities—hosting meetups and nurturing dev culture from the trenches to the summit.                                  ",
-    image: "/images/codezone.jpg",
-    stats: ["200+ Developers Overall"],
-  },
-  {
-    id: "code-flight-workshop",
-    title: "Team Bounters Belgavi",
-    role: "Meet-up Speaker and an Organizer",
-    description:
-      "Led hands-on Cybersecurity sessions on Web App Vulnerabilities basics and clean security habits. Kept engagement high and saw 90% of attendees power through to meetup.",
-    image: "/images/teambounters.jpg",
-    stats: ["2 Sessions", "50+ Students", "90% Completion"],
-  },
+
 ];
 
 export const achievements: Achievement[] = [
@@ -169,9 +131,16 @@ export const achievements: Achievement[] = [
 ];
 
 export const skills: string[] = [
-  "C++",
-  "Unreal Engine",
-  "C#",
-  "Blender",
-  "Unity",
+  "Java",
+  "Python",
+  "React.js",
+  "Node.js",
+  "MongoDB",
+  "SQL",
+  "Machine Learning",
+  "Artificial Intelligence",
+  "OpenCV",
+  "Streamlit",
+  "Supabase",
+  "Linux",
 ];

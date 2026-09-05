@@ -65,10 +65,7 @@ export default function NestView() {
               </p>
 
               <p>
-                What started as curiosity about game development evolved into a
-                passion for creating experiences that challenge, inspire, and
-                connect people. The falcon's hunting precision mirrors my
-                approach to problem-solving—focused, deliberate, and relentless.
+               What started as curiosity about Artificial Intelligence and Machine Learning evolved into a passion for building intelligent solutions that solve real-world problems. Like a well-trained model refining its predictions, my approach to problem-solving is driven by continuous learning, analytical thinking, and a relentless pursuit of innovation.
               </p>
 
               <p>
@@ -114,7 +111,7 @@ export default function NestView() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <img
-              src="/images/IMG-20240705-WA0013.jpg"
+              src="/images/all.jpg"
               alt="Team collaboration group"
               className="w-full rounded-xl shadow-2xl object-cover aspect-video"
               loading="lazy"
