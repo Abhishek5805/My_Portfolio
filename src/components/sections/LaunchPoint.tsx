@@ -30,7 +30,7 @@ export default function LaunchPoint() {
     {
       icon: "fas fa-download",
       label: "Resume",
-      href: "https://drive.google.com/file/d/1u9UMaWrPkYViQiqmamTzCilW3McHTGO7/view?usp=drivesdk",
+      href: "https://drive.google.com/file/d/17Q01MdYqv4ti_Ngo9dK0enxt8Q3IbP5Z/view?usp=drive_link",
     },
   ];
 
