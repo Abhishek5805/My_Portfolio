@@ -25,6 +25,16 @@ export interface Achievement {
   icon: string;
 }
 
+export interface Experience {
+  id: string;
+  title: string;
+  company: string;
+  companyLogo: string;
+  startDate: string;
+  description: string;
+  technologies: string[];
+}
+
 export const projects: Project[] = [
   {
     id: "snapclass-attendance-system",
@@ -97,8 +107,32 @@ export const events: Event[] = [
     image: "/images/evogen2.jpg",
     stats: ["100+ Participants", "2 Judges", "90% Satisfaction"],
   },
-
+  {
+id: "magnum-2026",
+title: "Magnum 2026",
+role: "Cybersecurity Event Judge",
+description:
+"Invited as a judge for Magnum 2026, a college-level cybersecurity event featuring a Treasure Hunt challenge. Evaluated participants' problem-solving, cybersecurity knowledge, and technical approach during the event.",
+image: "/images/magnum_2026.jpeg",
+stats: ["100+ Participants", "Event Judge", "Treasure Hunt"],
+}
 ];
+
+export const experiences: Experience[] = [
+  {
+    id: "aspiring-ai-ml-engineer",
+    title: "Aspiring AI/ML Engineer",
+    company: "Tata Consultancy Services (TCS)",
+    companyLogo: "/images/tcs-logo.svg",
+    startDate: "2026-02-01",
+    description:
+      "Passionate about building intelligent solutions using Python, Machine Learning, Deep Learning, and data-driven technologies. Continuously learning and developing practical AI/ML projects to solve real-world problems.",
+    technologies: ["Python", "Machine Learning", "Deep Learning", "Data Science"],
+  },
+];
+
+
+
 
 export const achievements: Achievement[] = [
   {
@@ -122,12 +156,13 @@ export const achievements: Achievement[] = [
       "Led the planning and execution of 2 successful cybersecurity events in college.",
     icon: "fas fa-chalkboard-teacher",
   },
-  {
-    id: "rising-star",
-    title: "CodeZone Secretary",
-    description: "Elected Secretary of CodeZone in final year.",
-    icon: "fas fa-users",
-  },
+ {
+id: "ai-ml-engineer",
+title: "AI/ML Engineer",
+description:
+"Aspiring AI/ML Engineer passionate about building intelligent solutions using Python, Machine Learning, Deep Learning, and data-driven technologies. Continuously learning and developing practical AI/ML projects to solve real-world problems.",
+icon: "fas fa-brain",
+},
 ];
 
 export const skills: string[] = [

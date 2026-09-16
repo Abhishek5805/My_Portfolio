@@ -46,6 +46,12 @@ export default function Navigation() {
               Dive Mode
             </button>
             <button
+              onClick={() => scrollTo("#experience")}
+              className="cursor-feather hover:text-falcon-sky transition-colors"
+            >
+              Experience
+            </button>
+            <button
               onClick={() => scrollTo("#currents")}
               className="cursor-feather hover:text-falcon-sky transition-colors"
             >
@@ -88,6 +94,12 @@ export default function Navigation() {
               className="block w-full text-left cursor-feather hover:text-falcon-sky transition-colors"
             >
               Dive Mode
+            </button>
+            <button
+              onClick={() => scrollTo("#experience")}
+              className="block w-full text-left cursor-feather hover:text-falcon-sky transition-colors"
+            >
+              Experience
             </button>
             <button
               onClick={() => scrollTo("#currents")}

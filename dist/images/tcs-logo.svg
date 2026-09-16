@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" role="img" aria-labelledby="title">
+  <title id="title">TCS</title>
+  <rect width="320" height="100" rx="12" fill="#ffffff"/>
+  <text x="18" y="70" fill="#1769aa" font-family="Arial, sans-serif" font-size="62" font-weight="700" letter-spacing="2">TCS</text>
+  <path d="M168 28h132M168 50h108M168 72h132" stroke="#1769aa" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+</svg>

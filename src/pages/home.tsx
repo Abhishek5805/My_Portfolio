@@ -4,6 +4,7 @@ import ScrollProgress from "@/components/ui/ScrollProgress";
 import Navigation from "@/components/ui/Navigation";
 import LaunchPoint from "@/components/sections/LaunchPoint";
 import DiveMode from "@/components/sections/DiveMode";
+import Experience from "@/components/sections/Experience";
 import WindCurrents from "@/components/sections/WindCurrents";
 import SkyMarkings from "@/components/sections/SkyMarkings";
 import NestView from "@/components/sections/NestView";
@@ -51,6 +52,7 @@ export default function Home() {
       <main>
         <LaunchPoint />
         <DiveMode />
+        <Experience />
         <WindCurrents />
         <SkyMarkings />
         <NestView />
