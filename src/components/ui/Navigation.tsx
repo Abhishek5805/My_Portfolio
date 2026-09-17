@@ -64,6 +64,12 @@ export default function Navigation() {
               Sky Markings
             </button>
             <button
+              onClick={() => scrollTo("#certifications")}
+              className="cursor-feather hover:text-falcon-sky transition-colors"
+            >
+              Certifications
+            </button>
+            <button
               onClick={() => scrollTo("#nest")}
               className="cursor-feather hover:text-falcon-sky transition-colors"
             >
@@ -112,6 +118,12 @@ export default function Navigation() {
               className="block w-full text-left cursor-feather hover:text-falcon-sky transition-colors"
             >
               Sky Markings
+            </button>
+            <button
+              onClick={() => scrollTo("#certifications")}
+              className="block w-full text-left cursor-feather hover:text-falcon-sky transition-colors"
+            >
+              Certifications
             </button>
             <button
               onClick={() => scrollTo("#nest")}

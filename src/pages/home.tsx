@@ -7,6 +7,7 @@ import DiveMode from "@/components/sections/DiveMode";
 import Experience from "@/components/sections/Experience";
 import WindCurrents from "@/components/sections/WindCurrents";
 import SkyMarkings from "@/components/sections/SkyMarkings";
+import Certifications from "@/components/sections/Certifications";
 import NestView from "@/components/sections/NestView";
 import useKonamiCode from "@/hooks/useKonamiCode";
 
@@ -54,6 +55,7 @@ export default function Home() {
         <DiveMode />
         <Experience />
         <WindCurrents />
+        <Certifications />
         <SkyMarkings />
         <NestView />
       </main>

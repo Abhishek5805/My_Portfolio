@@ -35,6 +35,14 @@ export interface Experience {
   technologies: string[];
 }
 
+export interface Certification {
+  id: string;
+  title: string;
+  issuer: string;
+  description: string;
+  icon: string;
+}
+
 export const projects: Project[] = [
   {
     id: "snapclass-attendance-system",
@@ -115,6 +123,15 @@ description:
 "Invited as a judge for Magnum 2026, a college-level cybersecurity event featuring a Treasure Hunt challenge. Evaluated participants' problem-solving, cybersecurity knowledge, and technical approach during the event.",
 image: "/images/magnum_2026.jpeg",
 stats: ["100+ Participants", "Event Judge", "Treasure Hunt"],
+},
+{
+    id: "tech-career-guide",
+    title: "Tech Career Guide",
+    role: "Career Guide",
+    description:
+      "Guided students across 3+ colleges through technology career paths, practical learning strategies, and opportunities to build skills for the future of work.",
+    image: "/images/career.jpeg",
+    stats: ["3+ Colleges", "Career Guidance", "Technology Skills"],
 }
 ];
 
@@ -165,17 +182,65 @@ icon: "fas fa-brain",
 },
 ];
 
+export const certifications: Certification[] = [
+  {
+    id: "dsa-java-apna-college",
+    title: "DSA with Java",
+    issuer: "Apna College",
+    description: "Strengthened problem-solving skills through data structures and algorithms in Java.",
+    icon: "fas fa-code",
+  },
+  {
+    id: "oci-generative-ai-professional",
+    title: "OCI Generative AI Professional",
+    issuer: "Oracle",
+    description: "Learned the foundations of generative AI and its applications on Oracle Cloud Infrastructure.",
+    icon: "fas fa-robot",
+  },
+  {
+    id: "oci-ai-foundations-associate",
+    title: "OCI AI Foundations Associate",
+    issuer: "Oracle",
+    description: "Built foundational knowledge of artificial intelligence, machine learning, and OCI services.",
+    icon: "fas fa-brain",
+  },
+  {
+    id: "ai-ml-apna-college",
+    title: "AI/ML",
+    issuer: "Apna College",
+    description: "Developed practical understanding of machine learning workflows and AI-based solutions.",
+    icon: "fas fa-microchip",
+  },
+  {
+    id: "mern-stack-apna-college",
+    title: "MERN Stack",
+    issuer: "Apna College",
+    description: "Learned to build full-stack web applications with MongoDB, Express, React, and Node.js.",
+    icon: "fas fa-layer-group",
+  },
+  {
+    id: "career-essentials-cybersecurity",
+    title: "Career Essentials in Cybersecurity",
+    issuer: "Microsoft and LinkedIn",
+    description: "Developed essential knowledge of cybersecurity concepts, threats, and secure practices.",
+    icon: "fas fa-shield-alt",
+  },
+];
+
 export const skills: string[] = [
   "Java",
   "Python",
   "React.js",
   "Node.js",
-  "MongoDB",
   "SQL",
   "Machine Learning",
   "Artificial Intelligence",
   "OpenCV",
   "Streamlit",
   "Supabase",
-  "Linux",
+  "Numpy",
+  "Pandas",
+  "Matplotlib",
+  "Seaborn",
+  "MediaPipe",
 ];

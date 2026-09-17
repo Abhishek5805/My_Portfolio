@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function LaunchPoint() {
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [typedRole, setTypedRole] = useState("");
   const scrollToDive = () => {
     const element = document.querySelector("#dive");
     if (element) {
@@ -56,13 +58,7 @@ export default function LaunchPoint() {
       thumb: "/images/githublogo.png",
       href: "https://github.com/Abhishek5805/wanderlust-project"
     },
-    {
-      id: 4,
-      type: "github",
-      title: "My First Project during College!",
-      thumb: "/images/githublogo.png",
-      href: "https://github.com/Abhishek5805/Online-Book-Recommendation-Project-",
-    },
+    
     {
       id: 5,
       type: "Certificate",
@@ -73,6 +69,38 @@ export default function LaunchPoint() {
   ];
 
   const [updates, setUpdates] = useState(initialLatestUpdates.slice(0, 5));
+
+  const roles = [
+    "AI/ML Engineer",
+    "Tech Career Guide",
+    "Video Editor",
+    "Web Developer",
+  ];
+
+  useEffect(() => {
+    const roleTimer = window.setInterval(() => {
+      setRoleIndex((currentIndex) => (currentIndex + 1) % roles.length);
+    }, 5000);
+
+    return () => window.clearInterval(roleTimer);
+  }, [roles.length]);
+
+  useEffect(() => {
+    const role = roles[roleIndex];
+    let characterIndex = 0;
+    setTypedRole("");
+
+    const typingTimer = window.setInterval(() => {
+      characterIndex += 1;
+      setTypedRole(role.slice(0, characterIndex));
+
+      if (characterIndex === role.length) {
+        window.clearInterval(typingTimer);
+      }
+    }, 75);
+
+    return () => window.clearInterval(typingTimer);
+  }, [roleIndex]);
 
   // expose a helper to add updates dynamically (useful for testing or hooking an API)
   useEffect(() => {
@@ -234,6 +262,24 @@ export default function LaunchPoint() {
               <span className="block text-foreground">ABHISHEK</span>
               <span className="block text-primary">SHINDE</span>
             </motion.h1>
+
+            <div
+              className="min-h-10 mb-6 flex items-center"
+              aria-live="polite"
+            >
+              <motion.p
+                key={roles[roleIndex]}
+                className="font-orbitron font-black text-lg sm:text-2xl text-ring tracking-wide"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.25 }}
+              >
+                {typedRole}
+                <span className="ml-1 text-primary animate-pulse" aria-hidden="true">
+                  |
+                </span>
+              </motion.p>
+            </div>
 
             <div className="mt-6 pt-4 border-t border-muted-foreground/20">
               <h3 className="font-orbitron font-bold text-lg sm:text-xl text-foreground mb-4">
